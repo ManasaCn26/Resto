@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="hero">
+        <!-- Background Image -->
+        <img src="background_img.jpg" alt="Restaurant Background" class="background-image">
+        
+        <!-- Color Overlay -->
+        <div class="overlay"></div>
+        
+        <!-- Header with Logo and Navigation -->
+        <header>
+            <!-- Text-based Logo -->
+            <div class="logo">
+                <span class="logo-main">Resto</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#book-table">Book Table</a></li>
+                    <li>
+                        <a href="#checkout" class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <!-- Left Side - Text Content -->
+            <div class="text-content">
+                <h1>Experience Culinary Excellence</h1>
+                <p>Discover a world of flavors crafted by our master chefs using only the finest ingredients. Our passion for food is reflected in every dish we serve.</p>
+                <a href="#book-table">
+                    <button class="btn">Book a Table</button>
+                </a>
+            </div>
+            
+            <!-- Right Side - Rotating Image -->
+            <div class="rotating-image-container">
+                <img src="rotate img.png" alt="Special Dish" class="rotating-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fas fa-utensils"></i>
+            </div>
+            <h3>Quality Food</h3>
+            <p>We use only the freshest ingredients sourced from local farmers and trusted suppliers to create our exquisite dishes.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <h3>Online Order</h3>
+            <p>Enjoy our delicious meals from the comfort of your home with our easy online ordering and delivery system.</p>
+        </div>
+        
+        <div class="feature-box">
+            <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h3>24/7 Service</h3>
+            <p>We're always here to serve you, day or night. Our kitchen never closes to satisfy your cravings anytime.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="about-images">
+            <img src="about1.jpg" alt="Restaurant Interior" class="about-image">
+            <img src="about2.jpg" alt="Restaurant Interior" class="about-image">
+            <img src="about3.jpg" alt="Restaurant Interior" class="about-image">
+            <img src="about4.jpg" alt="Restaurant Interior" class="about-image">
+        </div>
+        
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Founded in 2010, Resto began as a small family-owned restaurant with a passion for creating exceptional dining experiences. What started as a humble kitchen with just five tables has now grown into an award-winning establishment recognized for culinary excellence.</p>
+            
+            <p>Our philosophy is simple: source the finest ingredients, prepare them with skill and respect, and serve them with genuine hospitality. Every dish tells a story of tradition, innovation, and our commitment to quality.</p>
+            
+            <div class="about-highlights">
+                <div class="about-highlight">
+                    <i class="fas fa-award"></i>
+                    <span>5-time winner of "Best Fine Dining" award</span>
+                </div>
+                <div class="about-highlight">
+                    <i class="fas fa-utensils"></i>
+                    <span>Locally-sourced, seasonal ingredients</span>
+                </div>
+                <div class="about-highlight">
+                    <i class="fas fa-users"></i>
+                    <span>Expert team of internationally-trained chefs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="menu-header">
+            <div class="menu-title">Food Menu</div>
+            <h2 class="menu-subtitle">Most Popular Items</h2>
+            <p class="menu-popular">Discover our exquisite selection of culinary delights prepared by our master chefs</p>
+        </div>
+        
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="breakfast">
+                <i class="fas fa-coffee"></i> Breakfast
+            </button>
+            <button class="category-btn" data-category="lunch">
+                <i class="fas fa-utensils"></i> Lunch
+            </button>
+            <button class="category-btn" data-category="dinner">
+                <i class="fas fa-moon"></i> Dinner
+            </button>
+        </div>
+        
+        <!-- Breakfast Menu -->
+        <div class="menu-items-container active" id="breakfast-menu">
+            <div class="menu-item" data-item="1">
+                <img src="https://images.unsplash.com/photo-1550583724-b2692b85b150" alt="Pancakes" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Classic Pancakes</span>
+                    <span class="menu-item-price">$12.99</span>
+                </h3>
+                <p class="menu-item-desc">Fluffy buttermilk pancakes served with maple syrup and fresh berries.</p>
+            </div>
+            
+            <div class="menu-item" data-item="2">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="Avocado Toast" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Avocado Toast</span>
+                    <span class="menu-item-price">$14.50</span>
+                </h3>
+                <p class="menu-item-desc">Sourdough bread with smashed avocado, cherry tomatoes, and poached eggs.</p>
+            </div>
+            
+            <div class="menu-item" data-item="3">
+                <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929" alt="French Toast" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>French Toast</span>
+                    <span class="menu-item-price">$13.75</span>
+                </h3>
+                <p class="menu-item-desc">Brioche bread dipped in vanilla custard, served with caramelized bananas.</p>
+            </div>
+            
+            <div class="menu-item" data-item="4">
+                <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061" alt="Eggs Benedict" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Eggs Benedict</span>
+                    <span class="menu-item-price">$16.99</span>
+                </h3>
+                <p class="menu-item-desc">English muffin with Canadian bacon, poached eggs, and hollandaise sauce.</p>
+            </div>
+            
+            <div class="menu-item" data-item="5">
+                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Breakfast Burrito" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Breakfast Burrito</span>
+                    <span class="menu-item-price">$15.25</span>
+                </h3>
+                <p class="menu-item-desc">Flour tortilla filled with scrambled eggs, chorizo, potatoes, and cheese.</p>
+            </div>
+            
+            <div class="menu-item" data-item="6">
+                <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543" alt="Greek Yogurt" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Greek Yogurt Parfait</span>
+                    <span class="menu-item-price">$10.99</span>
+                </h3>
+                <p class="menu-item-desc">Greek yogurt with granola, honey, and seasonal fresh fruits.</p>
+            </div>
+        </div>
+        
+        <!-- Lunch Menu -->
+        <div class="menu-items-container" id="lunch-menu">
+            <div class="menu-item" data-item="7">
+                <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Salad" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Quinoa Salad</span>
+                    <span class="menu-item-price">$16.50</span>
+                </h3>
+                <p class="menu-item-desc">Quinoa with roasted vegetables, feta cheese, and lemon vinaigrette.</p>
+            </div>
+            
+            <div class="menu-item" data-item="8">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Burger" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Gourmet Burger</span>
+                    <span class="menu-item-price">$18.99</span>
+                </h3>
+                <p class="menu-item-desc">Angus beef patty with cheddar, bacon, caramelized onions, and truffle aioli.</p>
+            </div>
+            
+            <div class="menu-item" data-item="9">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" alt="Pasta" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Truffle Pasta</span>
+                    <span class="menu-item-price">$22.75</span>
+                </h3>
+                <p class="menu-item-desc">Fettuccine with wild mushrooms, parmesan, and black truffle oil.</p>
+            </div>
+            
+            <div class="menu-item" data-item="10">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641" alt="Sandwich" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Chicken Club</span>
+                    <span class="menu-item-price">$17.50</span>
+                </h3>
+                <p class="menu-item-desc">Grilled chicken with avocado, bacon, lettuce, and tomato on sourdough.</p>
+            </div>
+            
+            <div class="menu-item" data-item="11">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Pizza" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Margherita Pizza</span>
+                    <span class="menu-item-price">$19.99</span>
+                </h3>
+                <p class="menu-item-desc">Wood-fired pizza with tomato sauce, fresh mozzarella, and basil.</p>
+            </div>
+            
+            <div class="menu-item" data-item="12">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Steak" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Filet Mignon</span>
+                    <span class="menu-item-price">$32.99</span>
+                </h3>
+                <p class="menu-item-desc">8oz grass-fed beef with roasted potatoes and seasonal vegetables.</p>
+            </div>
+        </div>
+        
+        <!-- Dinner Menu -->
+        <div class="menu-items-container" id="dinner-menu">
+            <div class="menu-item" data-item="13">
+                <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b" alt="Salmon" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Grilled Salmon</span>
+                    <span class="menu-item-price">$28.50</span>
+                </h3>
+                <p class="menu-item-desc">Atlantic salmon with lemon butter sauce and asparagus.</p>
+            </div>
+            
+            <div class="menu-item" data-item="14">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641" alt="Risotto" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Mushroom Risotto</span>
+                    <span class="menu-item-price">$24.99</span>
+                </h3>
+                <p class="menu-item-desc">Arborio rice with wild mushrooms, white wine, and parmesan.</p>
+            </div>
+            
+            <div class="menu-item" data-item="15">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Lamb" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Rack of Lamb</span>
+                    <span class="menu-item-price">$36.75</span>
+                </h3>
+                <p class="menu-item-desc">Herb-crusted lamb with mint jus and potato gratin.</p>
+            </div>
+            
+            <div class="menu-item" data-item="16">
+                <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601" alt="Pasta" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Lobster Pasta</span>
+                    <span class="menu-item-price">$38.50</span>
+                </h3>
+                <p class="menu-item-desc">Linguine with fresh lobster meat in a creamy tomato sauce.</p>
+            </div>
+            
+            <div class="menu-item" data-item="17">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38" alt="Duck" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Duck Confit</span>
+                    <span class="menu-item-price">$34.99</span>
+                </h3>
+                <p class="menu-item-desc">Slow-cooked duck leg with cherry reduction and roasted vegetables.</p>
+            </div>
+            
+            <div class="menu-item" data-item="18">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="Vegetable" class="menu-item-img">
+                <h3 class="menu-item-title">
+                    <span>Vegetable Wellington</span>
+                    <span class="menu-item-price">$26.99</span>
+                </h3>
+                <p class="menu-item-desc">Seasonal vegetables wrapped in puff pastry with herb cream sauce.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout-section">
+        <div class="checkout-container">
+            <div class="checkout-header">
+                <h2 class="checkout-title">Your Order</h2>
+                <p class="checkout-subtitle">Review your items before proceeding to checkout</p>
+            </div>
+            
+            <div class="checkout-grid">
+                <div class="cart-items">
+                    <h3 class="cart-items-title">Your Cart</h3>
+                    <div class="cart-items-container">
+                        <!-- Cart items will be dynamically inserted here -->
+                        <div class="empty-cart">
+                            <div class="empty-cart-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <p class="empty-cart-text">Your cart is currently empty</p>
+                            <button class="back-to-menu">Back to Menu</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-summary">
+                    <h3 class="cart-summary-title">Order Summary</h3>
+                    <div class="summary-row">
+                        <span class="summary-label">Subtotal</span>
+                        <span class="summary-value" id="subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Tax (10%)</span>
+                        <span class="summary-value" id="tax">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Delivery Fee</span>
+                        <span class="summary-value" id="delivery">$5.00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span class="summary-label">Total</span>
+                        <span class="summary-value" id="total">$5.00</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Food Modal -->
+    <div class="food-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-flex">
+                <img src="" alt="Food Item" class="modal-img">
+                <div class="modal-text">
+                    <h2 class="modal-title"></h2>
+                    <div class="modal-price"></div>
+                    <p class="modal-desc"></p>
+                    <div class="modal-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" class="quantity-input" value="1" min="1">
+                            <button class="quantity-btn plus">+</button>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2 class="contact-title">Get In Touch</h2>
+                <p class="contact-text">We'd love to hear from you. Whether you have a question about our menu, want to host an event, or just want to say hello, our team is ready to assist you.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail-content">
+                            <h4>Our Location</h4>
+                            <p>123 Gourmet Avenue<br>Fine Dining District<br>Banglore,Karnataka</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-detail-content">
+                            <h4>Reservations</h4>
+                            <p>+91 9900695773<br>reservations@resto.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-detail">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail-content">
+                            <h4>General Inquiries</h4>
+                            <p>info@resto.com<br>events@resto.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <div class="contact-form-container">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Your Message</label>
+                            <textarea id="message" class="form-textarea" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Book Table Section -->
+    <section id="book-table" class="book-table-section">
+        <div class="book-table-container">
+            <div class="book-table-info">
+                <h2 class="book-table-title">Reserve Your Table</h2>
+                <p class="book-table-text">Experience culinary excellence in our elegant dining space. Reserve your table below and let us prepare an unforgettable dining experience for you.</p>
+                
+                <ul class="hours-list">
+                    <li class="hours-item">
+                        <span class="hours-day">Monday - Thursday</span>
+                        <span class="hours-time">5:00 PM - 10:00 PM</span>
+                    </li>
+                    <li class="hours-item">
+                        <span class="hours-day">Friday - Saturday</span>
+                        <span class="hours-time">5:00 PM - 11:00 PM</span>
+                    </li>
+                    <li class="hours-item">
+                        <span class="hours-day">Sunday</span>
+                        <span class="hours-time">4:00 PM - 9:00 PM</span>
+                    </li>
+                    <li class="hours-item">
+                        <span class="hours-day">Brunch (Sunday only)</span>
+                        <span class="hours-time">10:00 AM - 2:00 PM</span>
+                    </li>
+                </ul>
+                
+                <div class="contact-detail">
+                    <div class="contact-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Reservation Notes</h4>
+                        <p>For parties of 8 or more, please call us directly.<br>We recommend booking at least 2 weeks in advance for weekend reservations.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="book-table-form">
+                <div class="book-table-form-container">
+                    <h3 class="form-title">Book Your Experience</h3>
+                    <form id="reservationForm">
+                        <div class="form-row">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-name" class="form-label">Full Name</label>
+                                    <input type="text" id="res-name" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-email" class="form-label">Email Address</label>
+                                    <input type="email" id="res-email" class="form-input" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-phone" class="form-label">Phone Number</label>
+                                    <input type="tel" id="res-phone" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-guests" class="form-label">Number of Guests</label>
+                                    <select id="res-guests" class="form-input" required>
+                                        <option value="">Select</option>
+                                        <option value="1">1 person</option>
+                                        <option value="2">2 people</option>
+                                        <option value="3">3 people</option>
+                                        <option value="4">4 people</option>
+                                        <option value="5">5 people</option>
+                                        <option value="6">6 people</option>
+                                        <option value="7">7 people</option>
+                                        <option value="8">8 people</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-date" class="form-label">Date</label>
+                                    <input type="date" id="res-date" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-column">
+                                <div class="form-group">
+                                    <label for="res-time" class="form-label">Time</label>
+                                    <select id="res-time" class="form-input" required>
+                                        <option value="">Select</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                        <option value="21:30">9:30 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="res-requests" class="form-label">Special Requests</label>
+                            <textarea id="res-requests" class="form-textarea"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Reserve Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+    
+    
